@@ -1,0 +1,104 @@
+:root{
+	--color-black: #333333;
+	--color-dark:  #354052;
+	--color-gray:  #999999;
+	--color-green: #36af47;
+	--color-accent:#f15572;
+	--color-red:   #e64241;
+	--font-normal: 14px;
+}
+body{
+	font-family: 'PT Sans', sans-serif;
+	color: var(--color-dark);
+}
+img{
+	max-width: 100%;
+}
+.container{
+	max-width: 1160px;
+	margin: 0 auto;
+	padding: 0 5px;
+}
+.main-navigation{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px 0;
+}
+.navigation-list,
+.social-list{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0;
+	list-style-type: none;
+}
+.navigation-list{
+	width: 40%;
+}
+.navigation-item{
+	text-decoration: none;
+	color: var(--color-dark);
+	font-size: var(--font-normal);
+	font-weight: bold;
+	text-transform: uppercase;
+	transition: .2s ease;
+}
+.navigation-item:hover{
+	color: var(--color-accent);
+}
+.social-list{
+	width: 14%;
+	font-size: 0;
+}
+.social-item{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 35px;
+	width: 35px;
+	border-radius: 50%;
+	border: 1px solid var(--color-gray);
+	box-shadow: inset -4px -4px 5px 0px rgba(50, 50, 50, 0.15);
+	margin-right: 5px;
+	transition: .2s ease;
+}
+.social-item:hover{
+	box-shadow: inset 4px -36px 5px 0px rgba(50, 50, 50, 0.15);
+}
+.header-baner{
+	background: url(../img/header-bg.jpg);
+	background-repeat: no-repeat;
+	background-position: 50% 100%;
+	background-size: cover;
+	height: 100%;
+}
+.header-baner-content{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.header-title{
+	text-align: center;
+	color: #FFF;
+	font-size: 150px;
+	line-height: 140px;
+	text-transform: uppercase;
+}
+.header-title i{
+	font-family: 'Great Vibes', cursive;
+	text-transform: none;
+	display: block;
+	font-size: 72px;
+}
+.button{
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #FFF;
+	font-size: var(--font-normal);
+	padding: 15px 20px;
+	background-color: var(--color-red);
+	border: 1px solid #f15257;
+}
+
