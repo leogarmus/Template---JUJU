@@ -6,6 +6,7 @@
 	--color-accent:#f15572;
 	--color-red:   #e64241;
 	--font-normal: 14px;
+	--font-cursive:'Pacifico', cursive;
 }
 body{
 	font-family: 'PT Sans', sans-serif;
@@ -67,11 +68,13 @@ img{
 	box-shadow: inset 4px -36px 5px 0px rgba(50, 50, 50, 0.15);
 }
 .header-baner{
-	background: url(../img/header-bg.jpg);
-	background-repeat: no-repeat;
-	background-position: 50% 100%;
+	background: linear-gradient(to top, rgba(248, 239,0,.28), rgba(237,23,245,.28)), url(../img/header-bg.jpg),no-repeat;
+	background-position: center;
 	background-size: cover;
-	height: 100%;
+	height: 1000px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 .header-baner-content{
 	display: flex;
@@ -87,8 +90,9 @@ img{
 	text-transform: uppercase;
 }
 .header-title i{
-	font-family: 'Great Vibes', cursive;
+	font-family: var(--font-cursive);
 	text-transform: none;
+	font-weight: normal;
 	display: block;
 	font-size: 72px;
 }
@@ -100,5 +104,64 @@ img{
 	padding: 15px 20px;
 	background-color: var(--color-red);
 	border: 1px solid #f15257;
+	transition: .2s ease;
+}
+.button:hover{
+	box-shadow: 5px 5px 15px 5px rgba(50, 50, 50, 0.3);
+}
+.header-btn{
+	display: inline-block;
+}
+/*------Section-Indicators---------*/
+.section-indicators{
+	padding-top: 100px;
+}
+.section-header{
+	text-align: center;
+	margin-top: 0;
+	font-size: 30px;
+	text-transform: uppercase;
+	color: var(--color-black);
+}
+.header-cursive{
+	display: block;
+	font-family: var(--font-cursive);
+	text-transform: none;
+	font-size: 24px;
+	margin-bottom: 30px;
+}
+.section-title{
+	text-align: center;
+	margin-top: 80px;
+	font-size: 24px;
+	color: var(--color-gray);
+}
+.progress-bars{
+	margin-top: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	list-style-type: none;
+}
+.progress-item{
+	text-align: center;
+	box-sizing: border-box;
+}
+.progress-value,
+.bar-description{
+	font-size: 30px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: var(--color-black);
+}
+.progress-value{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 200px;
+	height: 200px;
+	font-size: 60px;
+	border-radius: 50%;
+	border: 20px solid #d0d5dc;
 }
 
